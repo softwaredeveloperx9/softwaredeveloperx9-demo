@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - PT. Kami Design</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 3px solid #2c5aa0;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            color: #2c5aa0;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .header h2 {
+            font-size: 24px;
+            color: #555;
+            margin: 10px 0 0 0;
+            font-weight: normal;
+        }
+        
+        .toc {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .toc h3 {
+            color: #2c5aa0;
+            margin-top: 0;
+        }
+        
+        .section {
+            margin: 30px 0;
+            page-break-inside: avoid;
+        }
+        
+        .section h2 {
+            color: #2c5aa0;
+            font-size: 20px;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .section h3 {
+            color: #2c5aa0;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .legal-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .legal-info ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .legal-info li {
+            margin: 8px 0;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .service-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .service-category h4 {
+            color: #2c5aa0;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .service-category ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .service-category li {
+            margin: 5px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+        
+        table th {
+            background: #2c5aa0;
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        table tr:hover {
+            background: #e3f2fd;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .note h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-style: italic;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                font-size: 12px;
+            }
+            .header {
+                page-break-after: avoid;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            table {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>COMPANY PROFILE</h1>
+        <h2>PT. KAMI DESIGN</h2>
+    </div>
+
+    <div class="toc">
+        <h3>DAFTAR ISI</h3>
+        <ul>
+            <li>I. PENDAHULUAN
+                <ul>
+                    <li>1.1. Legalitas Perusahaan</li>
+                    <li>1.2. Layanan Perusahaan</li>
+                </ul>
+            </li>
+            <li>II. PENGALAMAN PERUSAHAAN</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>I. PENDAHULUAN</h2>
+        
+        <h3>1.1. Legalitas Perusahaan</h3>
+        <div class="legal-info">
+            <ul>
+                <li><strong>Akta Pendirian:</strong> Notaris [Nama Notaris], S.H No. [Nomor] Tanggal [Tanggal Pendirian]</li>
+                <li><strong>SIUP:</strong> No. [Nomor SIUP] [Instansi Penerbit]</li>
+                <li><strong>TDP:</strong> No. [Nomor TDP] [Instansi Penerbit]</li>
+                <li><strong>NPWP:</strong> [Nomor NPWP]</li>
+                <li><strong>SKT:</strong> [Nomor SKT]</li>
+                <li><strong>NIB (Nomor Induk Berusaha):</strong> [Nomor NIB] (jika sudah menggunakan OSS)</li>
+            </ul>
+        </div>
+
+        <h3>1.2. Layanan Perusahaan</h3>
+        <div class="services">
+            <div class="service-category">
+                <h4>Desain Grafis & Visual Identity</h4>
+                <ul>
+                    <li>Logo Design & Branding</li>
+                    <li>Corporate Identity</li>
+                    <li>Packaging Design</li>
+                    <li>Print Design (Brosur, Flyer, Banner, dll)</li>
+                </ul>
+            </div>
+            
+            <div class="service-category">
+                <h4>Digital Design</h4>
+                <ul>
+                    <li>UI/UX Design</li>
+                    <li>Website Design</li>
+                    <li>Mobile App Design</li>
+                    <li>Social Media Design</li>
+                </ul>
+            </div>
+            
+            <div class="service-category">
+                <h4>Multimedia & Animation</h4>
+                <ul>
+                    <li>Motion Graphics</li>
+                    <li>Video Editing</li>
+                    <li>2D/3D Animation</li>
+                    <li>Presentasi Interaktif</li>
+                </ul>
+            </div>
+            
+            <div class="service-category">
+                <h4>Konsultasi Kreatif</h4>
+                <ul>
+                    <li>Brand Strategy</li>
+                    <li>Creative Campaign</li>
+                    <li>Marketing Materials</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>II. PENGALAMAN PERUSAHAAN</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 5%;">NO</th>
+                    <th style="width: 25%;">PENGGUNA JASA</th>
+                    <th style="width: 35%;">PAKET PEKERJAAN</th>
+                    <th style="width: 20%;">PERIODE</th>
+                    <th style="width: 15%;">NILAI KONTRAK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>PT. ABC Indonesia</td>
+                    <td>Pembuatan Brand Identity dan Website Corporate</td>
+                    <td>01/01/2023 - 28/02/2023</td>
+                    <td>75.000.000</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>CV. Maju Bersama</td>
+                    <td>Desain Packaging Produk dan Marketing Materials</td>
+                    <td>15/03/2023 - 30/04/2023</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Yayasan Pendidikan XYZ</td>
+                    <td>Pengembangan UI/UX Aplikasi Mobile Learning</td>
+                    <td>01/05/2023 - 31/07/2023</td>
+                    <td>120.000.000</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Hotel Grand Sejahtera</td>
+                    <td>Pembuatan Corporate Video dan Promotional Materials</td>
+                    <td>10/08/2023 - 25/09/2023</td>
+                    <td>85.000.000</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Dinas Pariwisata Kota [Nama Kota]</td>
+                    <td>Desain Kampanye Wisata Digital dan Print</td>
+                    <td>01/10/2023 - 30/11/2023</td>
+                    <td>95.000.000</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center; font-style: italic; color: #666; padding: 20px;">
+                        [Tambahkan proyek-proyek lainnya sesuai dengan pengalaman perusahaan]
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="note">
+        <h4>Catatan:</h4>
+        <ul>
+            <li>Silakan sesuaikan informasi legalitas perusahaan dengan dokumen resmi yang Anda miliki</li>
+            <li>Tambahkan atau sesuaikan layanan perusahaan sesuai dengan keahlian dan fokus bisnis PT. Kami Design</li>
+            <li>Isi tabel pengalaman perusahaan dengan proyek-proyek yang telah dikerjakan</li>
+            <li>Nilai kontrak dapat disesuaikan dengan mata uang dan skala bisnis perusahaan</li>
+            <li>Format tanggal dapat disesuaikan dengan preferensi (DD/MM/YYYY)</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p><em>Dokumen ini dapat disesuaikan dan dikembangkan sesuai dengan kebutuhan dan perkembangan perusahaan.</em></p>
+    </div>
+</body>
+</html>
