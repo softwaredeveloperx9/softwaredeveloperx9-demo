@@ -108,6 +108,8 @@ angular.module('app.frm').controller('PdfCtrl', function ($rootScope, $scope, Ut
         $scope.data_PDF = { ...resultData.data.Value.Data };
 
         Utility_Frm.Still_Processing($scope, false);
+
+        $('a[href="#dvTAB2"]').tab('show');
     };
 
     function messageInfo(content) {

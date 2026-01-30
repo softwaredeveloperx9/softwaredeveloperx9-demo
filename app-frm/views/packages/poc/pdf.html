@@ -103,7 +103,7 @@
                     <a class="nav-link" data-toggle="tab" href="#dvTAB1" role="tab"><i class="fa fa-clipboard mr-1"></i> Upload file .pdf</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#dvTAB2" role="tab"><i class="fa fa-user mr-1"></i> Result</a>
+                    <a class="nav-link" data-toggle="tab" href="#dvTAB2" role="tab"><i class="fa fa-unlink mr-1"></i> Data extracted</a>
                 </li>
             </ul>
             <div class="tab-content border-top-0 p-3">
@@ -113,9 +113,9 @@
                             <div class="row">
                                 <section class="col col-9">
                                     <span class="help-block"> File .pdf<span style="color: red">*</span> </span>
-                                    <label class="input">
+                                    <label class="input" style="display: flex;">
                                         <input type="file" id="fileUploadInput" class="custom-file-input" onchange="sdr_processFile('fileUploadInput', hehehe)" accept="application/pdf" style="width:400px" />
-                                        <button class="btn btn-default" ng-click="processPDF()"><i class="fa fa-refresh"></i> Process</button>
+                                        <button class="btn btn-default" ng-click="processPDF()" style="margin-left: 10px;padding: 0 12px;"><i class="fa fa-truck"></i> Process</button>
                                     </label>
                                 </section>
                             </div>
