@@ -1,0 +1,71 @@
+<header id="header" class="animated fadeInDown">
+    <div id="logo-group" style="display: none;">
+        <span id="logo"> <img src="https://pastigroup.co.id/wp-content/uploads/2025/04/logo.png" alt="SmartAdmin" /> </span>
+    </div>
+</header>
+<div id="main" role="main" class="animated fadeInDown">
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+                <h1 class="txt-color-red login-header-big">Framework - Engine</h1>
+                <div class="hero">
+                    <div class="pull-left login-desc-box-l">
+                        <h4 class="paragraph-header">Transform our Business Management. Experience comprehensive Framework functionality with intuitive simplicity.</h4>
+                        <div class="login-app-icons">
+                            <a class="btn btn-danger btn-sm">2026 © Framework</a>
+                            <a href-void class="btn btn-danger btn-sm" title="{{ FRM_Signature }}">About</a>
+                        </div>
+                    </div>
+                    <img src="styles/img/demo/iphoneview.png" class="pull-right display-image" alt style="width: 210px" />
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <h5 class="about-heading">About Framework - documentation guide</h5>
+                        <p>Documentation guide for using our Framework Application.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <h5 class="about-heading">With integrated application, helps our work easier.</h5>
+                        <p>Accesing your work properly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                <div class="well no-padding">
+                    <form class="smart-form client-form" ng-app="app.frmUtils" ng-controller="LoginXCtrl">
+                        <header>Sign In</header>
+                        <fieldset>
+                            <section>
+                                <label class="label">User Name</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-user"></i>
+                                    <input type="text" name="username" data-smart-validate-input data-required data-minlength="0" data-maxnlength="100" data-message="Please enter your UserName" ng-model="inputLogin" />
+                                    <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Please enter username</b></label>
+                            </section>
+                            <section>
+                                <label class="label">Password</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-lock"></i>
+                                    <input type="password" name="password" data-smart-validate-input data-required data-minlength="0" data-maxnlength="20" data-message="Please enter your password" ng-model="inputPassword" />
+                                    <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Enter your password</b>
+                                </label>
+                            </section>
+                        </fieldset>
+                        <footer>
+                            <button ng-click="login()" class="btn btn-primary">Sign in</button>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display: none">
+    <span ng-bind="GlobalMessage"></span>
+    <span ng-bind="FRM_Signature"></span>
+</div>
+<style>
+    #extr-page #header {
+        height: 100px;
+    }
+
+</style>
